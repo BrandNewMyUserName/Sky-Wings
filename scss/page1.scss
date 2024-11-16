@@ -1,0 +1,31 @@
+@import './base/vars';
+.main {
+	background-color: $black;
+}
+
+.key {
+	padding-top: 30px;
+}
+
+.key__text {
+	text-align: center;
+	margin-bottom: 47px;
+}
+.key__cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 142px;
+}
+.key__card {
+	text-align: center;
+	max-width: 580px;
+}
+.key__card-img {
+	border-radius: 50px;
+	border: 4px solid $white;
+	margin-bottom: 15px;
+}
+.key__card-title {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}

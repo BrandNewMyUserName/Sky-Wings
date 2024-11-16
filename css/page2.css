@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Gotu:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,800);
+.main {
+  background-color: #000;
+}
+
+.about {
+  padding-top: 30px;
+}
+
+.about__img {
+  border: 10px solid #fff;
+  border-radius: 266px;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-between;
+}
+.about__text p {
+  max-width: 600px;
+}/*# sourceMappingURL=page2.css.map */

@@ -1,0 +1,26 @@
+.header {
+}
+.header-row {
+	display: flex;
+	justify-content: center;
+}
+
+.header__logo {
+	text-align: center;
+	padding: 10px 0;
+	background-color: $header-logo;
+}
+.header__nav {
+	font-size: 1.3em;
+	padding: 50px 0;
+	background-color: $header-nav;
+}
+.nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+.nav__list-item {
+	a {
+		color: white;
+	}
+}
