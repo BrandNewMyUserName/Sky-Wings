@@ -1,1 +1,80 @@
-/*# sourceMappingURL=page4.css.map */
+@import url(https://fonts.googleapis.com/css?family=Gotu:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,800);
+.main {
+  background-color: #000;
+  padding: 44px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.btn-search {
+  background-color: #d9d9d9;
+  display: flex;
+  padding: 11px 21px;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  border-radius: 10px;
+}
+
+.search__div {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.search__div img {
+  padding: 0 10px;
+}
+
+#search-input {
+  color: #000;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #09d714;
+  border-radius: 10px;
+}
+
+.search-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 70px;
+  justify-items: center;
+}
+
+.searach-card {
+  padding: 40px 25px;
+  background-color: #d9d9d9;
+  color: #000;
+  border-radius: 68px;
+  max-width: 380px;
+  text-align: center;
+}
+
+.search-card__img {
+  min-height: 296px;
+  border-radius: 82px;
+}
+
+.search-card__title {
+  margin-bottom: 20px;
+}
+
+.search-card__text {
+  margin-bottom: 10px;
+}
+
+.search-card__btn {
+  color: #fff;
+  border-radius: 20px;
+  background-color: #09d714;
+  padding: 6px 32px;
+}/*# sourceMappingURL=page4.css.map */

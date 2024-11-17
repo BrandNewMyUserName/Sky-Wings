@@ -1,0 +1,70 @@
+@import './../scss/base/vars';
+.main {
+	background-color: $black;
+	padding: 44px;
+}
+
+.header__search {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 90px;
+}
+.btn-search {
+	background-color: $gray;
+	display: flex;
+	padding: 11px 21px;
+	column-gap: 11px;
+	border-radius: 10px;
+}
+.search__div {
+	background-color: $gray;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	img {
+		padding: 0 10px;
+	}
+}
+
+#search-input {
+	color: $black;
+}
+
+.search-button {
+	padding: 8px 16px;
+	background-color: $search;
+	border-radius: 10px;
+}
+
+.search-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 70px;
+	justify-items: center;
+}
+.searach-card {
+	padding: 40px 25px;
+	background-color: $gray;
+	color: $black;
+	border-radius: 68px;
+
+	max-width: 380px;
+	text-align: center;
+}
+.search-card__img {
+	min-height: 296px;
+	border-radius: 82px;
+}
+.search-card__title {
+	margin-bottom: 20px;
+}
+.search-card__text {
+	margin-bottom: 10px;
+}
+.search-card__btn {
+	color: $white;
+	border-radius: 20px;
+	background-color: $search;
+	padding: 6px 32px;
+}
