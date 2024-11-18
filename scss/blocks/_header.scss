@@ -20,7 +20,19 @@
 	justify-content: space-between;
 }
 .nav__list-item {
-	a {
-		color: white;
+	position: relative;
+	color: $white;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 0;
+		height: 3px;
+		background-color: $white;
+		transition: width 0.3s ease-in;
+	}
+	&:hover::after {
+		width: 100%;
 	}
 }

@@ -1,1 +1,76 @@
-/*# sourceMappingURL=page3.css.map */
+@import url(https://fonts.googleapis.com/css?family=Gotu:regular);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,800);
+.skywings-header {
+  background-image: url("./img/page3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 960px;
+}
+
+.skywings__title {
+  font-family: "Montserrat", sans-serif;
+  max-width: 830px;
+  font-size: 2.6em;
+  padding-top: 205px;
+}
+.skywings__title span {
+  color: #e0eb06;
+}
+
+.skywings__btn {
+  margin-top: 369px;
+  display: flex;
+  -moz-column-gap: 86px;
+       column-gap: 86px;
+}
+
+.btn-order {
+  padding: 5px 59px;
+  color: #000;
+  background-color: #ffd338;
+  border-radius: 8px;
+}
+
+.btn-info {
+  padding: 5px 59px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.skywings-cards {
+  padding-top: 14px;
+  background-color: #000;
+}
+
+.skywings-card-grid {
+  display: grid;
+  row-gap: 55px;
+}
+
+.skywings-card-img {
+  margin-bottom: 20px;
+}
+
+.skywings-card-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.skywings-card-order_text {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5em;
+  color: #d8ff58;
+}
+
+.skywings-card-cost {
+  font-size: 1.6em;
+}
+.skywings-card-cost span {
+  color: #989898;
+}/*# sourceMappingURL=page3.css.map */

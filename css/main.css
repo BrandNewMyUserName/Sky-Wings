@@ -149,8 +149,22 @@ body {
   justify-content: space-between;
 }
 
-.nav__list-item a {
-  color: white;
+.nav__list-item {
+  position: relative;
+  color: #fff;
+}
+.nav__list-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.3s ease-in;
+}
+.nav__list-item:hover::after {
+  width: 100%;
 }
 
 .footer {
