@@ -20,6 +20,18 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 142px;
 }
+@media screen and (max-width: 1200px) {
+  .key__cards {
+    justify-items: center;
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .key__cards {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
 
 .key__card {
   text-align: center;

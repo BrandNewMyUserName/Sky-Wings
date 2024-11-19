@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   height: 960px;
 }
+@media screen and (max-width: 1200px) {
+  .skywings-header {
+    height: 700px;
+  }
+}
 
 .skywings__title {
   font-family: "Montserrat", sans-serif;
@@ -19,12 +24,32 @@
 .skywings__title span {
   color: #e0eb06;
 }
+@media screen and (max-width: 1200px) {
+  .skywings__title {
+    padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 
 .skywings__btn {
   margin-top: 369px;
   display: flex;
   -moz-column-gap: 86px;
        column-gap: 86px;
+}
+@media screen and (max-width: 1200px) {
+  .skywings__btn {
+    margin-top: 250px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 660px) {
+  .skywings__btn {
+    flex-direction: column;
+    margin-top: 150px;
+    row-gap: 20px;
+  }
 }
 
 .btn-order {
@@ -33,6 +58,16 @@
   background-color: #ffd338;
   border-radius: 8px;
 }
+@media screen and (max-width: 1200px) {
+  .btn-order {
+    padding: 5px 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .btn-order {
+    padding: 5px 15px;
+  }
+}
 
 .btn-info {
   padding: 5px 59px;
@@ -40,10 +75,31 @@
   background-color: #fff;
   border-radius: 8px;
 }
+@media screen and (max-width: 1200px) {
+  .btn-info {
+    padding: 5px 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .btn-info {
+    padding: 5px 15px;
+  }
+}
 
 .skywings-cards {
   padding-top: 14px;
   background-color: #000;
+}
+
+.container-btn {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media screen and (max-width: 660px) {
+  .container-btn {
+    row-gap: 15px;
+  }
 }
 
 .skywings-card-grid {
@@ -61,11 +117,23 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .skywings-card-order {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .skywings-card-order_text {
   font-family: "Inter", sans-serif;
   font-size: 2.5em;
   color: #d8ff58;
+}
+@media screen and (max-width: 1200px) {
+  .skywings-card-order_text {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
 }
 
 .skywings-card-cost {

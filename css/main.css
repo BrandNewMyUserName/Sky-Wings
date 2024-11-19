@@ -115,6 +115,16 @@ body {
   font-family: "Gotu", sans-serif;
   color: #fff;
 }
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 660px) {
+  body {
+    font-size: 16px;
+  }
+}
 
 .container {
   max-width: 1320px;
@@ -137,16 +147,33 @@ body {
   padding: 10px 0;
   background-color: #fd8994;
 }
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    display: none;
+  }
+}
 
 .header__nav {
   font-size: 1.3em;
   padding: 50px 0;
   background-color: #fc5c6b;
 }
+@media screen and (max-width: 1200px) {
+  .header__nav {
+    padding: 35px 0;
+    background-color: #fd8994;
+  }
+}
 
 .nav__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .nav__list {
+    display: none;
+  }
 }
 
 .nav__list-item {
@@ -167,9 +194,42 @@ body {
   width: 100%;
 }
 
+.header-nav-row {
+  display: inline;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .header-nav-row {
+    display: flex;
+  }
+}
+
+.logo {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    display: block;
+  }
+}
+
+.header-btn {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .header-btn {
+    display: block;
+  }
+}
+
 .footer {
   padding: 74px 0;
   background-color: #000;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 .footer-row {
@@ -179,11 +239,23 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 660px) {
+  .footer-row {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+}
 
 .footer__nav__list {
   display: flex;
   -moz-column-gap: 32px;
        column-gap: 32px;
+}
+@media screen and (max-width: 660px) {
+  .footer__nav__list {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
 }
 
 .footer__nav__list-item a {
@@ -194,4 +266,10 @@ body {
   display: flex;
   -moz-column-gap: 24px;
        column-gap: 24px;
+}
+@media screen and (max-width: 660px) {
+  .media {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

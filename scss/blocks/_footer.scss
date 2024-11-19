@@ -1,6 +1,9 @@
 .footer {
 	padding: 74px 0;
 	background-color: $black;
+	@include mediaTablet {
+		padding: 40px 0;
+	}
 }
 .footer-row {
 	font-family: $font-roboto;
@@ -8,11 +11,18 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	@include mediaPhone {
+		flex-wrap: wrap;
+		row-gap: 16px;
+	}
 }
 
 .footer__nav__list {
 	display: flex;
 	column-gap: 32px;
+	@include mediaPhone {
+		column-gap: 16px;
+	}
 }
 .footer__nav__list-item {
 	a {
@@ -22,4 +32,7 @@
 .media {
 	display: flex;
 	column-gap: 24px;
+	@include mediaPhone {
+		column-gap: 12px;
+	}
 }

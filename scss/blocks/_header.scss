@@ -9,15 +9,26 @@
 	text-align: center;
 	padding: 10px 0;
 	background-color: $header-logo;
+	@include mediaTablet {
+		display: none;
+	}
 }
 .header__nav {
 	font-size: 1.3em;
 	padding: 50px 0;
 	background-color: $header-nav;
+	@include mediaTablet {
+		padding: 35px 0;
+		background-color: $header-logo;
+	}
 }
 .nav__list {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	@include mediaTablet {
+		display: none;
+	}
 }
 .nav__list-item {
 	position: relative;
@@ -34,5 +45,27 @@
 	}
 	&:hover::after {
 		width: 100%;
+	}
+}
+
+.header-nav-row {
+	display: inline;
+	width: 100%;
+	@include mediaTablet {
+		display: flex;
+	}
+}
+
+.logo {
+	display: none;
+	@include mediaTablet {
+		display: block;
+	}
+}
+
+.header-btn {
+	display: none;
+	@include mediaTablet {
+		display: block;
 	}
 }

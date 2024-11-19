@@ -15,6 +15,11 @@
   border-radius: 266px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1200px) {
+  .about__img {
+    margin-bottom: 50px;
+  }
+}
 
 .about__text {
   font-size: 1.3em;
@@ -23,4 +28,23 @@
 }
 .about__text p {
   max-width: 600px;
+}
+@media screen and (max-width: 1200px) {
+  .about__text {
+    font-size: 1em;
+  }
+  .about__text p {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .about__text {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .about__text p {
+    text-align: center;
+    max-width: none;
+  }
 }/*# sourceMappingURL=page2.css.map */

@@ -1,4 +1,5 @@
 @import './../scss/base/vars';
+@import './../scss/base/mixins';
 .main {
 }
 .skywings-header {
@@ -7,6 +8,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 960px;
+	@include mediaTablet {
+		height: 700px;
+	}
 }
 
 .skywings__title {
@@ -17,29 +21,61 @@
 	span {
 		color: #e0eb06;
 	}
+	@include mediaTablet {
+		padding-top: 100px;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 .skywings__btn {
 	margin-top: 369px;
 	display: flex;
 	column-gap: 86px;
+	@include mediaTablet {
+		margin-top: 250px;
+		justify-content: center;
+	}
+	@include mediaPhone {
+		flex-direction: column;
+		margin-top: 150px;
+		row-gap: 20px;
+	}
 }
 .btn-order {
 	padding: 5px 59px;
 	color: $black;
 	background-color: #ffd338;
 	border-radius: 8px;
+	@include mediaTablet {
+		padding: 5px 30px;
+	}
+	@include mediaPhone {
+		padding: 5px 15px;
+	}
 }
 .btn-info {
 	padding: 5px 59px;
 	color: $black;
 	background-color: $white;
 	border-radius: 8px;
+	@include mediaTablet {
+		padding: 5px 30px;
+	}
+	@include mediaPhone {
+		padding: 5px 15px;
+	}
 }
 .skywings-cards {
 	padding-top: 14px;
 	background-color: $black;
 }
-
+.container-btn {
+	display: flex;
+	column-gap: 30px;
+	@include mediaPhone {
+		row-gap: 15px;
+	}
+}
 .skywings-card-grid {
 	display: grid;
 	row-gap: 55px;
@@ -53,11 +89,19 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 20px;
+	@include mediaTablet {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 .skywings-card-order_text {
 	font-family: $font-inter;
 	font-size: 2.5em;
 	color: #d8ff58;
+	@include mediaTablet {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
 }
 .skywings-card-cost {
 	span {

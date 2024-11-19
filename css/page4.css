@@ -6,6 +6,16 @@
   background-color: #000;
   padding: 44px;
 }
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .main {
+    padding: 20px;
+  }
+}
 
 .header__search {
   display: flex;
@@ -13,14 +23,28 @@
   justify-content: space-between;
   margin-bottom: 90px;
 }
+@media screen and (max-width: 660px) {
+  .header__search {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .btn-search {
   background-color: #d9d9d9;
   display: flex;
+  align-items: center;
   padding: 11px 21px;
   -moz-column-gap: 11px;
        column-gap: 11px;
   border-radius: 10px;
+}
+@media screen and (max-width: 660px) {
+  .btn-search {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 }
 
 .search__div {
@@ -29,12 +53,18 @@
   align-items: center;
   border-radius: 10px;
 }
+@media screen and (max-width: 660px) {
+  .search__div {
+    width: 100%;
+  }
+}
 .search__div img {
   padding: 0 10px;
 }
 
 #search-input {
   color: #000;
+  width: 100%;
 }
 
 .search-button {
@@ -50,6 +80,16 @@
   row-gap: 70px;
   justify-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .search-cards {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .search-cards {
+    grid-template-columns: 1fr;
+  }
+}
 
 .searach-card {
   padding: 40px 25px;
@@ -59,18 +99,58 @@
   max-width: 380px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .searach-card {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .searach-card {
+    padding: 20px 15px;
+  }
+}
 
 .search-card__img {
   min-height: 296px;
   border-radius: 82px;
 }
+@media screen and (max-width: 1200px) {
+  .search-card__img {
+    min-height: 220px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .search-card__img {
+    min-height: 150px;
+  }
+}
 
 .search-card__title {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .search-card__title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .search-card__title {
+    margin-bottom: 10px;
+  }
+}
 
 .search-card__text {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .search-card__text {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .search-card__text {
+    margin-bottom: 10px;
+  }
 }
 
 .search-card__btn {
@@ -78,4 +158,14 @@
   border-radius: 20px;
   background-color: #09d714;
   padding: 6px 32px;
+}
+@media screen and (max-width: 1200px) {
+  .search-card__btn {
+    padding: 5px 25px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .search-card__btn {
+    padding: 4px 20px;
+  }
 }/*# sourceMappingURL=page4.css.map */
