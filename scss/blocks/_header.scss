@@ -1,11 +1,8 @@
 .header {
 }
-.header-row {
-	display: flex;
-	justify-content: center;
-}
 
 .header__logo {
+	align-items: center;
 	text-align: center;
 	padding: 10px 0;
 	background-color: $header-logo;
@@ -53,6 +50,10 @@
 	width: 100%;
 	@include mediaTablet {
 		display: flex;
+		justify-content: space-between;
+	}
+	@include mediaPhone {
+		gap: 10px;
 	}
 }
 
@@ -67,5 +68,25 @@
 	display: none;
 	@include mediaTablet {
 		display: block;
+	}
+}
+
+.header-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-logo-nav {
+	display: none;
+	@include mediaTablet {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.logo-img {
+	@include mediaTablet {
+		width: 25%;
 	}
 }

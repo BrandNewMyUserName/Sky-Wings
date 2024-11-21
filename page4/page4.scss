@@ -3,12 +3,12 @@
 
 .main {
 	background-color: $black;
-	padding: 44px;
+	padding: 44px 0;
 	@include mediaTablet {
-		padding: 30px;
+		padding: 30px 0;
 	}
 	@include mediaPhone {
-		padding: 20px;
+		padding: 20px 0;
 	}
 }
 
@@ -17,9 +17,10 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 90px;
-	@include mediaPhone {
-		flex-direction: column;
-		align-items: flex-start;
+	@include mediaSmallPhone {
+		row-gap: 20px;
+		flex-wrap: wrap;
+		margin-bottom: 45px;
 	}
 }
 
@@ -30,10 +31,18 @@
 	padding: 11px 21px;
 	column-gap: 11px;
 	border-radius: 10px;
+	@include mediaTablet {
+		img {
+			height: 24px;
+			width: 24px;
+		}
+	}
 	@include mediaPhone {
-		width: 100%;
-		justify-content: center;
-		margin-bottom: 10px;
+		padding: 8px 11px;
+	}
+
+	@include mediaSmallPhone {
+		order: 0;
 	}
 }
 
@@ -42,11 +51,16 @@
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
-	@include mediaPhone {
-		width: 100%;
-	}
 	img {
 		padding: 0 10px;
+	}
+	@include mediaPhone {
+		max-width: 250px;
+	}
+
+	@include mediaSmallPhone {
+		order: 2;
+		max-width: 100%;
 	}
 }
 
@@ -59,6 +73,17 @@
 	padding: 8px 16px;
 	background-color: $search;
 	border-radius: 10px;
+}
+
+.search__menu {
+	@include mediaTablet {
+		height: 24px;
+		width: 24px;
+	}
+
+	@include mediaSmallPhone {
+		order: 1;
+	}
 }
 
 .search-cards {

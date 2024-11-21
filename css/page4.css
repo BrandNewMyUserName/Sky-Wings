@@ -4,16 +4,16 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:600,800);
 .main {
   background-color: #000;
-  padding: 44px;
+  padding: 44px 0;
 }
 @media screen and (max-width: 1200px) {
   .main {
-    padding: 30px;
+    padding: 30px 0;
   }
 }
 @media screen and (max-width: 660px) {
   .main {
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 
@@ -23,10 +23,11 @@
   justify-content: space-between;
   margin-bottom: 90px;
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 460px) {
   .header__search {
-    flex-direction: column;
-    align-items: flex-start;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
   }
 }
 
@@ -39,11 +40,20 @@
        column-gap: 11px;
   border-radius: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .btn-search img {
+    height: 24px;
+    width: 24px;
+  }
+}
 @media screen and (max-width: 660px) {
   .btn-search {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 10px;
+    padding: 8px 11px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .btn-search {
+    order: 0;
   }
 }
 
@@ -53,13 +63,19 @@
   align-items: center;
   border-radius: 10px;
 }
-@media screen and (max-width: 660px) {
-  .search__div {
-    width: 100%;
-  }
-}
 .search__div img {
   padding: 0 10px;
+}
+@media screen and (max-width: 660px) {
+  .search__div {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .search__div {
+    order: 2;
+    max-width: 100%;
+  }
 }
 
 #search-input {
@@ -71,6 +87,18 @@
   padding: 8px 16px;
   background-color: #09d714;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .search__menu {
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .search__menu {
+    order: 1;
+  }
 }
 
 .search-cards {
