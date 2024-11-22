@@ -1,116 +1,55 @@
-// .burger-nav{
-//     display: flex;
-//     flex-direction: column;
-// 	align-items: center;
-//     // text-align: left;
-//     background-color: $nav-other-section;
-//     padding: 20px 0;
-// }
-// .burger-nav__list {
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
-//     width: 100%;
-//     padding-left: 5%; 
-//     /* Повна ширина меню */
-// 	// @include mediaTablet {
-// 	// 	display: none;
-// 	// }
-// }
-// .about-deltaplans {
-//     background-color: $nav-about;
-// }
-// .burger-nav__list-item {
-//     font-family: $font-gotu;
-//     font-size: 1em;
-//     padding: 10px 20px;
-//     display: block;
-// 	position: relative;
-// 	color: $white;
-
-
-// 	// &::after {
-
-// 		// content: '';
-// 		// position: absolute;
-// 		// bottom: -2px;
-// 		// left: 0;
-// 		// width: 0;
-// 		// height: 3px;
-// 		// background-color: $white;
-// 		// transition: width 0.3s ease-in;
-// 	// }
-// 	// &:hover::after {
-// 	// 	width: 100%;
-// 	// }
-// }
-
-// .burger-nav__list-item:hover {
-//     text-decoration: underline;
-//     background-color: rgba(255, 255, 255, 0.1);
-// }
-
-
-// @media (max-width: 425px) {
-//     .burger-nav__list-item {
-//         font-size: 15px; /* Розмір шрифту для мобільних пристроїв */
-//     }
-// }
-
-// /* Екрани для айпадів (ширина від 768px до 1024px) */
-
-
+@import './../base/vars';
 
 /* Загальні стилі для контейнера */
 .burger-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Забезпечує розширення на всю ширину сторінки */
-    margin: 0;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%; /* Забезпечує розширення на всю ширину сторінки */
+	margin: 0;
+	padding: 0;
 }
 
 /* Загальні стилі для списку */
 .burger-nav__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%; /* Забезпечує повну ширину */
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%; /* Забезпечує повну ширину */
 }
 
 /* Перша секція (перший пункт меню) */
 .section-one {
-    background-color: $nav-about; /* Ваш колір для першої секції */
-    width: 100%; /* Фон на всю ширину сторінки */
-    padding: 10px 0 10px 30px;
-    text-align: left;
+	background-color: $nav-other-section; /* Ваш колір для першої секції */
+	width: 100%; /* Фон на всю ширину сторінки */
+	padding: 10px 0 10px 30px;
+	text-align: left;
+	&:hover {
+		background-color: $nav-about;
+	}
 }
 
 /* Секції з іншим кольором */
-.section-two{
-    background-color: $nav-other-section; /* Ваш колір для решти секцій */
-    width: 100%; /* Фон на всю ширину сторінки */
-    padding: 10px 0 10px 30px; /* Відступи всередині */
-    text-align: left;
+.section-two {
+	background-color: $nav-other-section; /* Ваш колір для решти секцій */
+	width: 100%; /* Фон на всю ширину сторінки */
+	padding: 10px 0 10px 30px; /* Відступи всередині */
+	text-align: left;
+	&:hover {
+		background-color: $nav-about;
+	}
 }
 
 /* Загальний стиль посилань */
 .burger-nav__list-item {
-    color: $white;
-    font-family: $font-gotu;
-    font-size: 1.5em;
-    text-decoration: none;
+	color: $white;
+	font-family: $font-gotu;
+	font-size: 1.5em;
+	text-decoration: none;
 }
-
-/* Ховер-ефект */
-.burger-nav__list-item:hover {
-    text-decoration: underline;
-}
-
 
 @media (max-width: 425px) {
-    .burger-nav__list-item {
-        font-size: 21px; /* Розмір шрифту для планшетів */
-    }
+	.burger-nav__list-item {
+		font-size: 21px; /* Розмір шрифту для планшетів */
+	}
 }
