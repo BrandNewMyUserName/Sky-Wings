@@ -17,7 +17,7 @@ window.addEventListener('resize', function () {
 	const img_burger = manageBurger.querySelector('img');
 	if (window.innerWidth > 1200) {
 		menu.style.display = 'none';
-		img_burger.src = './img/header/open.png';
+		img_burger.src = './../img/header/open.png';
 	}
 });
 
