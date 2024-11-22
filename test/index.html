@@ -1,86 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Example</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOS Animation Example</title>
+  <!-- Підключення AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-Gfwv1k6+Qz/9bxOrzZ39Is4EqFsLl29DgFzUMkzX1Y8JpePvLjf9arRl2LY9tbr6T3TjqRYI+gHe9Wexl6VZ1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-header {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
 
-header img {
-    width: 100px;
-    cursor: pointer;
-    margin-top: 10px;
-}
+    .colored-section {
+      background-color: #f0f0f0;
+    }
 
-main {
-    padding: 20px;
-}
+    .button {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 20px 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-    </style>
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Site</h1>
-        <img src="image.jpg" alt="Click Me" id="toggle-navigation">
-    </header>
-    <main>
-        <p>This is the main content of the site. Click the image above to open the navigation menu.</p>
-    </main>
-    <nav id="navigation-menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <script src="script.js"></script>
+
+  <!-- Секція 1 -->
+  <section>
+    <h1 data-aos="fade-up">Ласкаво просимо на сайт</h1>
+    <p data-aos="fade-right" data-aos-duration="1000">
+      Тут ви знайдете цікаві анімації, створені за допомогою AOS.
+    </p>
+    <button class="button" data-aos="zoom-in">Натисніть мене</button>
+  </section>
+
+  <!-- Секція 2 -->
+  <section class="colored-section">
+    <h2 data-aos="flip-left">AOS у дії</h2>
+    <p data-aos="fade-up" data-aos-delay="200">
+      AOS дозволяє легко додавати анімації при скролі.
+    </p>
+  </section>
+
+  <!-- Секція 3 -->
+  <section>
+    <h3 data-aos="zoom-in-up">Почніть використовувати AOS сьогодні</h3>
+    <p data-aos="fade-down" data-aos-duration="800">
+      Підключення просте і швидке!
+    </p>
+  </section>
+
+  <!-- Підключення AOS JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-cuB60c7BxMNTCz6eDtzPvjyGe+Z9ZeQ4lH/EcSRlyZl2C/s8mUz8xFcJESnRZNRHLXYxEPFsJnpe3yZm6bT4Xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Ініціалізація AOS -->
+  <script>
+    AOS.init({
+      duration: 1000, // Тривалість анімації (1 секунда)
+      once: true,     // Анімація виконується лише один раз
+      offset: 200     // Відстань до запуску анімації
+    });
+  </script>
 </body>
-<script src="script.js"></script>
 </html>
