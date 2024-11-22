@@ -1,7 +1,10 @@
 @import './../scss/base/vars';
 @import './../scss/base/mixins';
+
 .main {
-	background-color: $black;
+	background-image: url('./../img/mainpage/main.jpg');
+	background-size: cover;
+	background-position: center;
 }
 .about {
 	padding-top: 30px;

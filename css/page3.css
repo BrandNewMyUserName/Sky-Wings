@@ -115,7 +115,9 @@
 
 .skywings-cards {
   padding-top: 14px;
-  background-color: #000;
+  background-image: url("./../img/mainpage/main.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .container-btn {

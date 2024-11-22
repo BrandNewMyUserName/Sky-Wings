@@ -1,7 +1,9 @@
 @import './base/vars';
 @import './base/mixins';
 .main {
-	background-color: $black;
+	background-image: url('./../img/mainpage/main.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .key {
