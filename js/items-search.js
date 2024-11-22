@@ -2,14 +2,14 @@
 
 // Отримуємо необхідні елементи
 const searchInput = document.getElementById('search-input');
-const searchButton = document.querySelector('.search-button');
+// const searchButton = document.querySelector('.search-button');
 const searchCards = document.querySelectorAll('.searach-card');
 
 // Додаємо обробник події на кнопку "Знайти"
-searchButton.addEventListener('click', () => {
-    const searchValue = searchInput.value.trim().toLowerCase(); // Отримуємо текст з поля вводу
-    filterCards(searchValue); // Викликаємо функцію фільтрації
-});
+// searchButton.addEventListener('click', () => {
+//     const searchValue = searchInput.value.trim().toLowerCase(); // Отримуємо текст з поля вводу
+//     filterCards(searchValue); // Викликаємо функцію фільтрації
+// });
 
 // Додаємо обробник події для вводу в поле (динамічне оновлення)
 searchInput.addEventListener('input', () => {
