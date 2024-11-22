@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>SkyWings</title>
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/page1.css" />
 	</head>
@@ -41,13 +41,29 @@
 								<a class="nav__list-item" href="./page4/page4.html">Магазин обладнання</a>
 							</li>
 						</ul>
-						<button class="header-btn">
+						<button class="header-btn" id="manage-burger">
 							<img src="./img/header/open.png" alt="open" />
 						</button>
 					</div>
 				</div>
 			</nav>
 		</header>
+
+		<nav class="burger-nav" style="display: none;" id="nav-burger">
+			<ul class="burger-nav__list" id="burger">
+				<div class="about-deltaplans">
+					<li class="section-one">
+						<a class="burger-nav__list-item" href="./page2/page2.html">Про дельтапланеризм</a>
+					</li>
+				</div>
+				<li class="section-two">
+					<a class="burger-nav__list-item" href="./page3/page3.html">Навчання і сертифікація</a>
+				</li>
+				<li class="section-two">
+					<a class="burger-nav__list-item" href="./page4/page4.html">Магазин обладнання</a>
+				</li>
+			</ul>
+		</nav>
 
 		<!-- Main -->
 		<main class="main">
@@ -128,4 +144,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="./js/burger-nav.js"></script>
 </html>

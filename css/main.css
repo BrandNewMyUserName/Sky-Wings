@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 @import url(https://fonts.googleapis.com/css?family=Gotu:regular);
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular);
@@ -295,5 +296,58 @@ body {
   .media {
     -moz-column-gap: 12px;
          column-gap: 12px;
+  }
+}
+
+/* Загальні стилі для контейнера */
+.burger-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Забезпечує розширення на всю ширину сторінки */
+  margin: 0;
+  padding: 0;
+}
+
+/* Загальні стилі для списку */
+.burger-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Забезпечує повну ширину */
+}
+
+/* Перша секція (перший пункт меню) */
+.section-one {
+  background-color: #E46D6D; /* Ваш колір для першої секції */
+  width: 100%; /* Фон на всю ширину сторінки */
+  padding: 10px 0 10px 30px;
+  text-align: left;
+}
+
+/* Секції з іншим кольором */
+.section-two {
+  background-color: #BE4C4C; /* Ваш колір для решти секцій */
+  width: 100%; /* Фон на всю ширину сторінки */
+  padding: 10px 0 10px 30px; /* Відступи всередині */
+  text-align: left;
+}
+
+/* Загальний стиль посилань */
+.burger-nav__list-item {
+  color: #fff;
+  font-family: "Gotu", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Ховер-ефект */
+.burger-nav__list-item:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  .burger-nav__list-item {
+    font-size: 21px; /* Розмір шрифту для планшетів */
   }
 }/*# sourceMappingURL=main.css.map */
