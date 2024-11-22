@@ -79,6 +79,11 @@
   }
 }
 
+.btn-order:hover {
+  background-color: #c5a222;
+  transition: 0.4s;
+}
+
 .btn-info {
   padding: 5px 59px;
   color: #000;
@@ -94,6 +99,11 @@
   .btn-info {
     padding: 5px 15px;
   }
+}
+
+.btn-info:hover {
+  background-color: rgba(255, 255, 255, 0.5921568627);
+  transition: 0.4s;
 }
 
 .skywings-cards {

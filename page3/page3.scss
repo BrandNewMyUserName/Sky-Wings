@@ -58,6 +58,10 @@
 		padding: 5px 15px;
 	}
 }
+.btn-order:hover {
+	background-color: #c5a222;
+	transition: 0.4s;
+}
 .btn-info {
 	padding: 5px 59px;
 	color: $black;
@@ -69,6 +73,10 @@
 	@include mediaPhone {
 		padding: 5px 15px;
 	}
+}
+.btn-info:hover {
+	background-color: #ffffff97;
+	transition: 0.4s;
 }
 .skywings-cards {
 	padding-top: 14px;
