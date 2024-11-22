@@ -4,7 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SkyWings</title>
-		<!-- <link rel="stylesheet" href="./aos.css" /> -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/page1.css" />
 	</head>
@@ -14,9 +20,9 @@
 			<div class="header__logo">
 				<div class="container">
 					<div class="header-logo">
-						<img src="./img/header/logo-img.png" alt="logo-img" />
+						<img src="./img/header/logo-img.png" alt="logo-img" data-aos="fade-right" />
 						<a href="./mainpaig.html">
-							<img src="./img/header/logo-text.png" alt="logo-text" />
+							<img src="./img/header/logo-text.png" alt="logo-text" data-aos="fade-down" />
 						</a>
 					</div>
 				</div>
@@ -26,9 +32,19 @@
 				<div class="container">
 					<div class="header-nav-row">
 						<div class="header-logo-nav">
-							<img class="logo-img" src="./img/header/logo-img.png" alt="logo-img" />
+							<img
+								class="logo-img"
+								src="./img/header/logo-img.png"
+								alt="logo-img"
+								data-aos="fade-right"
+							/>
 							<a href="./mainpaig.html">
-								<img class="logo-text" src="./img/header/logo-text.png" alt="logo-text" />
+								<img
+									class="logo-text"
+									src="./img/header/logo-text.png"
+									alt="logo-text"
+									data-aos="fade-down"
+								/>
 							</a>
 						</div>
 						<ul class="nav__list">
@@ -50,7 +66,7 @@
 			</nav>
 		</header>
 
-		<nav class="burger-nav" style="display: none;" id="nav-burger">
+		<nav class="burger-nav" style="display: none" id="nav-burger">
 			<ul class="burger-nav__list" id="burger">
 				<div class="about-deltaplans">
 					<li class="section-one">
@@ -70,13 +86,18 @@
 		<main class="main">
 			<div class="container">
 				<section class="key">
-					<h1 class="title">Ваш ключ до неба</h1>
+					<h1 class="title" data-aos="fade-up">Ваш ключ до неба</h1>
 					<p class="key__text">
 						Ми допоможемо вам відчути свободу польоту в безпеці та з професіоналами
 					</p>
 					<div class="key__cards">
 						<article class="key__card">
-							<img class="key__card-img" src="./img/mainpage/pic01.png" alt="keyimgcard" />
+							<img
+								class="key__card-img"
+								src="./img/mainpage/pic01.png"
+								alt="keyimgcard"
+								data-aos="flip-left"
+							/>
 							<h2 class="key__card-title">10 років досвіду</h2>
 							<p class="key__card-text">
 								Наша команда професійних інструкторів <br />навчила більше 500 пілотів різного рівня
@@ -84,7 +105,12 @@
 							</p>
 						</article>
 						<article class="key__card">
-							<img class="key__card-img" src="./img/mainpage/pic02.png" alt="keyimgcard" />
+							<img
+								class="key__card-img"
+								src="./img/mainpage/pic02.png"
+								alt="keyimgcard"
+								data-aos="flip-right"
+							/>
 							<h2 class="key__card-title">Безпека на першому місці</h2>
 							<p class="key__card-text">
 								Ми використовуємо тільки сучасне обладнання та дотримуємось суворих стандартів
@@ -92,7 +118,12 @@
 							</p>
 						</article>
 						<article class="key__card">
-							<img class="key__card-img" src="./img/mainpage/pic03.png" alt="keyimgcard" />
+							<img
+								class="key__card-img"
+								src="./img/mainpage/pic03.png"
+								alt="keyimgcard"
+								data-aos="flip-left"
+							/>
 							<h2 class="key__card-title">Унікальні маршрути польотів</h2>
 							<p class="key__card-text">
 								Наша школа пропонує польоти в мальовничих місцях — від гір до озер, забезпечуючи
@@ -100,7 +131,12 @@
 							</p>
 						</article>
 						<article class="key__card">
-							<img class="key__card-img" src="./img/mainpage/pic04.png" alt="keyimgcard" />
+							<img
+								class="key__card-img"
+								src="./img/mainpage/pic04.png"
+								alt="keyimgcard"
+								data-aos="flip-right"
+							/>
 							<h2 class="key__card-title">Індивідуальний підхід</h2>
 							<p class="key__card-text">
 								Кожен учень отримує персональну програму підготовки, яка відповідає його рівню та
@@ -144,8 +180,12 @@
 				</div>
 			</div>
 		</footer>
-		<!-- <script src="./aos.js"></script> -->
-
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 	</body>
 	<script src="./js/burger-nav.js"></script>
 </html>

@@ -35,7 +35,7 @@
 }
 @media screen and (max-width: 660px) {
   .skywings__title {
-    padding-top: 30px;
+    padding-top: 60px;
     font-size: 2em;
   }
 }
@@ -59,6 +59,13 @@
     margin-top: 100px;
     -moz-column-gap: 46px;
          column-gap: 46px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .skywings__btn {
+    margin-top: 50px;
+    -moz-column-gap: 26px;
+         column-gap: 26px;
   }
 }
 

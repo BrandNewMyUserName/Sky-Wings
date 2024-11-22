@@ -4,6 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SkyWings</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./../css/main.css" />
 		<link rel="stylesheet" href="./../css/page2.css" />
 	</head>
@@ -13,9 +20,9 @@
 			<div class="header__logo">
 				<div class="container">
 					<div class="header-logo">
-						<img src="./../img/header/logo-img.png" alt="logo-img" />
+						<img src="./../img/header/logo-img.png" alt="logo-img" data-aos="fade-right" />
 						<a href="./../mainpaig.html">
-							<img src="./../img/header/logo-text.png" alt="logo-text" />
+							<img src="./../img/header/logo-text.png" alt="logo-text" data-aos="fade-down" />
 						</a>
 					</div>
 				</div>
@@ -25,9 +32,14 @@
 				<div class="container">
 					<div class="header-nav-row">
 						<div class="header-logo-nav">
-							<img class="logo-img" src="./../img/header/logo-img.png" alt="logo-img" />
+							<img
+								class="logo-img"
+								src="./../img/header/logo-img.png"
+								alt="logo-img"
+								data-aos="fade-right"
+							/>
 							<a href="./../mainpaig.html">
-								<img src="./../img/header/logo-text.png" alt="logo-text" />
+								<img src="./../img/header/logo-text.png" alt="logo-text" data-aos="fade-down" />
 							</a>
 						</div>
 						<ul class="nav__list">
@@ -42,14 +54,14 @@
 							</li>
 						</ul>
 						<button class="header-btn" id="manage-burger">
-							<img src="../img/header/open.png" alt="open"/>
+							<img src="../img/header/open.png" alt="open" />
 						</button>
 					</div>
 				</div>
 			</nav>
 		</header>
 
-		<nav class="burger-nav" style="display: none;" id="nav-burger">
+		<nav class="burger-nav" style="display: none" id="nav-burger">
 			<ul class="burger-nav__list" id="burger">
 				<div class="about-deltaplans">
 					<li class="section-one">
@@ -69,8 +81,8 @@
 		<main class="main">
 			<div class="container">
 				<section class="about">
-					<h1 style="margin-bottom: 40px" class="title">Про дельтапланеризм</h1>
-					<img src="./img/pic01.png" alt="foto" class="about__img">
+					<h1 style="margin-bottom: 40px" class="title" data-aos="fade-up">Про дельтапланеризм</h1>
+					<img src="./img/pic01.png" alt="foto" class="about__img" />
 					<div class="about__text">
 						<p>
 							Дельтапланеризм — це не просто спорт, це спосіб відчути справжню свободу в небі та
@@ -124,6 +136,12 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 	</body>
 	<script src="../js/burger-nav.js"></script>
 </html>

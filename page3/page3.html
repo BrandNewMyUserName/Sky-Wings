@@ -4,6 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SkyWings</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./../css/main.css" />
 		<link rel="stylesheet" href="./../css/page3.css" />
 	</head>
@@ -13,9 +20,9 @@
 			<div class="header__logo">
 				<div class="container">
 					<div class="header-logo">
-						<img src="./../img/header/logo-img.png" alt="logo-img" />
+						<img src="./../img/header/logo-img.png" alt="logo-img" data-aos="fade-right" />
 						<a href="./../mainpaig.html">
-							<img src="./../img/header/logo-text.png" alt="logo-text" />
+							<img src="./../img/header/logo-text.png" alt="logo-text" data-aos="fade-down" />
 						</a>
 					</div>
 				</div>
@@ -25,9 +32,14 @@
 				<div class="container">
 					<div class="header-nav-row">
 						<div class="header-logo-nav">
-							<img class="logo-img" src="./../img/header/logo-img.png" alt="logo-img" />
+							<img
+								class="logo-img"
+								src="./../img/header/logo-img.png"
+								alt="logo-img"
+								data-aos="fade-right"
+							/>
 							<a href="./../mainpaig.html">
-								<img src="./../img/header/logo-text.png" alt="logo-text" />
+								<img src="./../img/header/logo-text.png" alt="logo-text" data-aos="fade-down" />
 							</a>
 						</div>
 						<ul class="nav__list">
@@ -42,14 +54,14 @@
 							</li>
 						</ul>
 						<button class="header-btn" id="manage-burger">
-							<img src="./../img/header/open.png" alt="open"/>
+							<img src="./../img/header/open.png" alt="open" />
 						</button>
 					</div>
 				</div>
 			</nav>
 		</header>
 
-		<nav class="burger-nav" style="display: none;" id="nav-burger">
+		<nav class="burger-nav" style="display: none" id="nav-burger">
 			<ul class="burger-nav__list" id="burger">
 				<div class="about-deltaplans">
 					<li class="section-one">
@@ -70,7 +82,7 @@
 			<!-- Skywings header -->
 			<section class="skywings-header">
 				<div class="container">
-					<h1 class="skywings__title">
+					<h1 class="skywings__title" data-aos="fade-up">
 						SkyWings - <span>ідеальне місце</span> для здобуття льотних <span>навичок</span>
 					</h1>
 					<div class="skywings__btn">
@@ -86,7 +98,7 @@
 					<h1 class="title" style="color: #f0fb23">Плани польотів</h1>
 					<div class="skywings-card-grid">
 						<div class="skywings-card">
-							<img class="skywings-card-img" src="./img/pic01.png" alt="" />
+							<img class="skywings-card-img" src="./img/pic01.png" alt="" data-aos="fade-right" />
 							<div class="skywings-card-order">
 								<h2 class="skywings-card-order_text">Індивідуальний політ</h2>
 								<div class="container-btn">
@@ -97,7 +109,7 @@
 							<p class="skywings-card-cost"><span>Вартість:</span> 2500 грн</p>
 						</div>
 						<div class="skywings-card">
-							<img class="skywings-card-img" src="./img/pic02.png" alt="" />
+							<img class="skywings-card-img" src="./img/pic02.png" alt="" data-aos="fade-right" />
 							<div class="skywings-card-order">
 								<h2 class="skywings-card-order_text">Політ з інструктром</h2>
 								<div class="container-btn">
@@ -108,7 +120,7 @@
 							<p class="skywings-card-cost"><span>Вартість:</span> 4500 грн</p>
 						</div>
 						<div class="skywings-card">
-							<img class="skywings-card-img" src="./img/pic03.png" alt="" />
+							<img class="skywings-card-img" src="./img/pic03.png" alt="" data-aos="fade-right" />
 							<div class="skywings-card-order">
 								<h2 class="skywings-card-order_text">Політ на механіці</h2>
 								<div class="container-btn">
@@ -155,6 +167,12 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 	</body>
 	<script src="../js/burger-nav.js"></script>
 </html>
